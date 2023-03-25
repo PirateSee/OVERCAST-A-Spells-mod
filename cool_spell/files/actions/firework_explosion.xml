@@ -1,0 +1,9 @@
+<Entity>
+
+	<LuaComponent
+	    execute_every_n_frame="1"
+		script_source_file="mods/cool_spell/files/scripts/firework_selection.lua">
+  	</LuaComponent>
+
+</Entity>
+

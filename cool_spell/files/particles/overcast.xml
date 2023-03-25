@@ -1,0 +1,17 @@
+<Sprite 
+  default_animation="explosion" 
+  filename="mods/cool_spell/files/particles/overcast.png" 
+  offset_x="2" 
+  offset_y="2" >
+  <RectAnimation 
+    frame_count="4" 
+    frame_height="5" 
+    frame_wait="0.15" 
+    frame_width="5" 
+    frames_per_row="3" 
+    loop="0" 
+    name="explosion" 
+    pos_x="0" 
+    pos_y="0">
+  </RectAnimation>
+</Sprite>

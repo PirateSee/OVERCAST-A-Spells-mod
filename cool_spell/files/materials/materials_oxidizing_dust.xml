@@ -1,0 +1,62 @@
+<Materials>
+
+	<CellData
+	name="overcast_oxidizing_dust"
+	ui_name="Oxidizing Dust"
+  	tags="[sand_other],[corrodible],[alchemy],[hot]"
+	burnable="1"
+	density="6"
+	cell_type="liquid"
+	wang_color="ff0049AD"
+	generates_smoke="1"
+	liquid_gravity="2"
+	liquid_sand="1"
+	on_fire="0"
+	requires_oxygen="0"
+	temperature_of_fire="200"
+	autoignition_temperature="1"
+	hp="600" 
+	fire_hp="1000"
+	audio_physics_material_event="sand"
+	audio_physics_material_wall="sand"
+	audio_physics_material_solid="sand"
+	show_in_creative_mode="1"
+	>
+    <Graphics
+	  texture_file="mods/cool_spell/files/materials/oxidizing_powder.png"
+	  color="ff0049AD" >
+    </Graphics>
+	<StatusEffects>
+		<Ingestion>
+			<StatusEffect type="INGESTION_ON_FIRE" amount="0.2" />
+		</Ingestion>
+	</StatusEffects>
+	</CellData>
+	
+	<!these reactions are here so they dont get disabled when inert materials is enabled.
+	these reactions are the entire point of this material so if they got disabled this material would be uselsess>
+  <Reaction probability="3"
+  	input_cell1="overcast_oxidizing_dust" 	input_cell2="[burnable]"
+  	output_cell1="fire"	output_cell2="[burnable]"
+	>
+  </Reaction>
+  
+  <Reaction probability="3"
+  	input_cell1="overcast_oxidizing_dust" 	input_cell2="[burnable]"
+  	output_cell1="overcast_oxidizing_dust"	output_cell2="fire"
+	>
+  </Reaction>
+  
+  <Reaction probability="40"
+  	input_cell1="overcast_oxidizing_dust" 	input_cell2="[burnable]" input_cell3="air"
+  	output_cell1="overcast_oxidizing_dust"	output_cell2="[burnable]" output_cell3="fire"
+	>
+  </Reaction>
+  
+  <Reaction probability="8"
+	input_cell1="[lava]" 		input_cell2="overcast_oxidizing_dust"
+	output_cell1="[lava]" 		output_cell2="fire"  >
+  </Reaction>
+  
+</Materials>
+

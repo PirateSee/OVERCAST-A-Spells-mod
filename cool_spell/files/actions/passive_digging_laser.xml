@@ -1,0 +1,42 @@
+<Entity>
+	
+	<Base file="data/entities/base_custom_card.xml" > 
+		<SpriteComponent 
+			image_file="mods/cool_spell/files/actions/passive_digging_laser.png" >
+		</SpriteComponent>
+		
+		<ItemActionComponent 
+			_tags="enabled_in_world"
+			action_id="DIGGING_LASER" >
+		</ItemActionComponent>
+	</Base>
+	
+	<LaserEmitterComponent
+		_tags="enabled_in_hand"
+		is_emitting="1">
+		<laser
+			_tags="enabled_in_hand"
+			damage_to_entities="0"
+			damage_to_cells="4000"
+			max_length="48"
+			beam_radius="0.5"
+			max_cell_durability_to_destroy="10"
+			root_entity_is_responsible_for_damage="1"
+			audio_enabled="1"
+			hit_particle_chance="15"
+			beam_particle_chance="50"
+			beam_particle_type="plasma_fading"
+			>
+		</laser>
+	</LaserEmitterComponent>
+	
+	<InheritTransformComponent
+		always_use_immediate_parent_rotation="1" 
+		_tags="enabled_in_world,enabled_in_hand" >
+	  <Transform 
+		position.x="10" 
+		position.y="0" >
+	  </Transform>
+	</InheritTransformComponent>
+	
+</Entity>

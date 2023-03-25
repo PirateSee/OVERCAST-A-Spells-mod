@@ -1,0 +1,48 @@
+<Entity>
+	
+	<Base file="data/entities/base_custom_card.xml" > 
+		<SpriteComponent 
+			image_file="mods/cool_spell/files/actions/ammo_conserve.png" >
+		</SpriteComponent>
+		
+		<ItemActionComponent 
+			_tags="enabled_in_world"
+			action_id="CONSERVE_AMMO" >
+		</ItemActionComponent>
+	</Base>
+	
+  	<ParticleEmitterComponent
+		_tags="enabled_in_hand,item_identified"
+		emitted_material_name="spark_red"
+		offset.x="0"
+		offset.y="0"
+		x_pos_offset_min="4"
+		x_pos_offset_max="6"
+		y_pos_offset_min="2"
+		y_pos_offset_max="-2"
+		x_vel_min="-25"
+		x_vel_max="-34"
+		y_vel_min="1"
+		y_vel_max="5"
+		gravity.y="8"
+		count_min="1"
+		count_max="3"
+		lifetime_min="0.1"
+		lifetime_max="0.4"
+		create_real_particles="0"
+		emit_cosmetic_particles="1"
+		emission_interval_min_frames="3"
+		emission_interval_max_frames="5"
+		is_emitting="1" >
+	</ParticleEmitterComponent>
+	
+	<InheritTransformComponent
+		always_use_immediate_parent_rotation="1" 
+		_tags="enabled_in_world,enabled_in_hand" >
+	  <Transform 
+		position.x="8" 
+		position.y="0" >
+	  </Transform>
+	</InheritTransformComponent>
+	
+</Entity>

@@ -1,0 +1,20 @@
+<Entity>
+
+    <GameEffectComponent
+		_tags="selection_greedymeal"
+        effect="CUSTOM"
+        frames="300"
+        custom_effect_id="GRAHAM_DOUBLE_GOLD"
+    ></GameEffectComponent>
+
+	<UIIconComponent
+		name="$graham_status_greedymeal"
+		description="$graham_statusdesc_greedymeal"
+		icon_sprite_file="mods/grahamsperks/files/effects/greedymeal.png"
+		is_perk="0"
+		display_above_head="1"
+		display_in_hud="1">
+	</UIIconComponent>
+
+
+</Entity>

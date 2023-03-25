@@ -1,0 +1,91 @@
+<Materials>
+
+  <Reaction probability="50"
+  	input_cell1="magic_liquid_random_polymorph" 	input_cell2="magic_liquid_unstable_teleportation"
+  	output_cell1="overcast_magic_liquid_mystery"	output_cell2="overcast_magic_liquid_mystery"
+	>
+  </Reaction>
+  
+  <Reaction probability="50"
+  	input_cell1="material_confusion" 	input_cell2="magic_liquid_unstable_teleportation"
+  	output_cell1="overcast_magic_liquid_mystery"	output_cell2="overcast_magic_liquid_mystery"
+	>
+  </Reaction>
+  
+  <Reaction probability="1"
+  	input_cell1="overcast_magic_liquid_mystery" 	input_cell2="[frozen]"
+  	output_cell1="blood_cold"	output_cell2="[frozen]"
+	>
+  </Reaction>
+  
+  <Reaction probability="20"
+  	input_cell1="overcast_magic_liquid_mystery" 	input_cell2="copper"
+  	output_cell1="copper"	output_cell2="copper"
+	>
+  </Reaction>
+  
+  <Reaction probability="10"
+  	input_cell1="overcast_magic_liquid_mystery" 	input_cell2="radioactive_liquid"
+  	output_cell1="acid_gas"	output_cell2="acid"
+	>
+  </Reaction>
+  
+  <Reaction probability="30"
+  	input_cell1="overcast_magic_liquid_mystery" 	input_cell2="oil"
+  	output_cell1="coal"	output_cell2="oil"
+	>
+  </Reaction>
+  
+  <Reaction probability="20"
+  	input_cell1="overcast_magic_liquid_mystery" 	input_cell2="diamond"
+  	output_cell1="coal"	output_cell2="gold"
+	blob_radius2="3"
+	>
+  </Reaction>
+  
+	<Reaction probability="50"
+    input_cell1="sand"    input_cell2="magic_liquid_berserk"
+    output_cell1="overcast_oxidizing_dust"  output_cell2="magic_liquid_berserk"
+	blob_radius1="5"
+    >
+	</Reaction>
+  
+  --anomaly fluid destablizing
+
+  <Reaction probability="30"
+  	input_cell1="overcast_magic_liquid_mystery" 	input_cell2="magic_liquid_polymorph"
+  	output_cell1="overcast_magic_liquid_mystery"	output_cell2="magic_liquid_random_polymorph"
+	>
+  </Reaction>
+  
+  <Reaction probability="5"
+  	input_cell1="overcast_magic_liquid_mystery" 	input_cell2="magic_liquid_polymorph"
+  	output_cell1="overcast_magic_liquid_mystery_vapour"	output_cell2="magic_liquid_random_polymorph"
+	>
+  </Reaction>
+ 
+  <Reaction probability="30"
+  	input_cell1="overcast_magic_liquid_mystery" 	input_cell2="magic_liquid_teleportation"
+  	output_cell1="overcast_magic_liquid_mystery"	output_cell2="magic_liquid_unstable_teleportation"
+	>
+  </Reaction>
+  
+  <Reaction probability="5"
+  	input_cell1="overcast_magic_liquid_mystery" 	input_cell2="magic_liquid_teleportation"
+  	output_cell1="overcast_magic_liquid_mystery_vapour"	output_cell2="magic_liquid_unstable_teleportation"
+	>
+  </Reaction>
+  
+  <Reaction probability="20"
+  	input_cell1="overcast_magic_liquid_mystery" 	input_cell2="magic_liquid_charm"
+  	output_cell1="overcast_magic_liquid_mystery"	output_cell2="magic_liquid_worm_attractor"
+	>
+  </Reaction>
+  
+  <Reaction probability="5"
+  	input_cell1="overcast_magic_liquid_mystery" 	input_cell2="magic_liquid_charm"
+  	output_cell1="overcast_magic_liquid_mystery_vapour"	output_cell2="magic_liquid_worm_attractor"
+	>
+  </Reaction>
+  
+</Materials>

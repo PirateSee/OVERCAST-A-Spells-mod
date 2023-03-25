@@ -1,0 +1,12 @@
+<Entity>	
+	<InheritTransformComponent>
+    </InheritTransformComponent>	
+    
+    <GameEffectComponent
+		_tags="selection_overcast"
+    	effect="CUSTOM"
+        custom_effect_id="OVERCAST_OVERCASTING"
+    	frames="600" >
+	</GameEffectComponent >
+    
+</Entity>

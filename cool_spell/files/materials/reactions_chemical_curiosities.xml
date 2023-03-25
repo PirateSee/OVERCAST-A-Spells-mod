@@ -1,0 +1,27 @@
+<Materials>
+
+  <Reaction probability="70"
+  	input_cell1="AA_MAT_NEUTRAL_POTION" 	input_cell2="overcast_oxidizing_dust"
+  	output_cell1="overcast_magic_liquid_mystery"	output_cell2="overcast_magic_liquid_mystery"
+	>
+  </Reaction> --potion base to make anomaly fluid
+  
+  <Reaction probability="50"
+  	input_cell1="alchemyPowder" 	input_cell2="overcast_magic_liquid_mystery"
+  	output_cell1="overcast_magic_liquid_mystery"	output_cell2="overcast_magic_liquid_mystery"
+	>
+  </Reaction> --dupe anomaly fluid
+
+  <Reaction probability="30"
+  	input_cell1="overcast_magic_liquid_mystery" 	input_cell2="AA_LIQUID_SPELL"
+  	output_cell1="overcast_magic_liquid_mystery"	output_cell2="AA_UNSTABLE_LIQUID_SPELL"
+	>
+  </Reaction>   --anomaly fluid destablizing
+  
+  <Reaction probability="5"
+  	input_cell1="overcast_magic_liquid_mystery" 	input_cell2="AA_LIQUID_SPELL"
+  	output_cell1="overcast_magic_liquid_mystery_vapour"	output_cell2="AA_UNSTABLE_LIQUID_SPELL"
+	>
+  </Reaction>   --anomaly fluid destablizing
+	
+</Materials>

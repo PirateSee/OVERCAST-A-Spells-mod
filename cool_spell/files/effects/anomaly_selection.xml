@@ -1,0 +1,26 @@
+<Entity>	
+	<InheritTransformComponent>
+    </InheritTransformComponent>	
+    
+    <GameEffectComponent
+		_tags="selection_anomaly"
+    	effect="CUSTOM"
+        custom_effect_id="OVERCAST_ANOMALY"
+    	frames="600" >
+	</GameEffectComponent >
+
+    <LuaComponent
+		script_source_file="mods/cool_spell/files/effects/anomaly.lua"
+		execute_every_n_frame="1" >
+	</LuaComponent>
+	
+	<UIIconComponent
+		name="Anomaly"
+		description="You are feeling very mysterious"
+		icon_sprite_file="mods/cool_spell/files/effects/anomaly.png"
+		is_perk="0"
+		display_above_head="1"
+		display_in_hud="1">
+	</UIIconComponent>
+    
+</Entity>

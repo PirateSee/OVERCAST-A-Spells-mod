@@ -1,0 +1,22 @@
+<Entity tags="effect_worm,effect_worm_attractor">
+	<InheritTransformComponent>
+    </InheritTransformComponent>	
+    
+    <GameEffectComponent
+		_tags="effect_worm,effect_worm_attractor,selection_worm_attractor"
+    	effect="WORM_ATTRACTOR"
+    	frames="600"
+    >
+	</GameEffectComponent >
+	
+	<UIIconComponent
+		name="$status_worm_attractor"
+		description="$statusdesc_worm_attractor"
+		icon_sprite_file="data/ui_gfx/status_indicators/worm_attractor.png"
+		is_perk="0"
+		display_above_head="1"
+		display_in_hud="1"
+		>
+	</UIIconComponent>
+
+</Entity>

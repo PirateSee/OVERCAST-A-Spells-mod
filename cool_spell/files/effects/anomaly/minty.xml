@@ -1,0 +1,26 @@
+<Entity>
+    
+<LuaComponent
+    script_damage_about_to_be_received="mods/grahamsperks/files/effects/damagescale.lua"
+execute_every_n_frame="-1" 
+>
+</LuaComponent >
+
+
+<GameEffectComponent 
+_tags="selection_minty"
+effect="CUSTOM"
+frames="300"
+>
+</GameEffectComponent >
+
+	<UIIconComponent
+		name="$graham_status_minty"
+		description="$graham_statusdesc_minty"
+		icon_sprite_file="mods/grahamsperks/files/effects/minty.png"
+		is_perk="0"
+		display_above_head="1"
+		display_in_hud="1">
+	</UIIconComponent>
+
+</Entity>

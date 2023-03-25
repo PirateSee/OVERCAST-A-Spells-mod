@@ -1,0 +1,22 @@
+<Entity>
+	<InheritTransformComponent>
+    </InheritTransformComponent>	
+    
+    <GameEffectComponent
+		_tags="selection_poison"
+    	effect="POISON"
+    	frames="300"
+    >
+	</GameEffectComponent >
+	
+	<UIIconComponent
+		name="$status_poison"
+		description="$statusdesc_poison"
+		icon_sprite_file="data/ui_gfx/status_indicators/poisoned.png"
+		is_perk="0"
+		display_above_head="1"
+		display_in_hud="1"
+		>
+	</UIIconComponent>
+	
+</Entity>

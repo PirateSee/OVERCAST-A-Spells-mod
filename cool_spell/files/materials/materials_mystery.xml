@@ -1,0 +1,53 @@
+<Materials>
+
+	<CellData
+	name="overcast_magic_liquid_mystery"
+	ui_name="Anomalous Fluid"
+  	tags="[liquid],[water],[magic_liquid],[impure],[freezable],[condensable],[hydratable],[evaporable_custom]"
+	burnable="0"
+	density="2.49"
+	cell_type="liquid"
+	wang_color="a846005B"
+	generates_smoke="0"
+	liquid_gravity="1"
+	liquid_sand="0"
+	gfx_glow="100"
+	on_fire="0"
+	temperature_of_fire="10"
+	requires_oxygen="0"
+	liquid_stains="1"
+	liquid_sprite_stain_shaken_drop_chance="2"
+	audio_materialaudio_type="MAGICAL"
+	warmth_melts_to_material="overcast_magic_liquid_mystery_vapour"
+	warmth_melts_chance_rev="500"
+	cold_freezes_to_material="blood_cold"
+	show_in_creative_mode="1"
+	>
+	<ParticleEffect
+		vel.y="-13.14"
+		vel_random.min_x="-11.71"
+		vel_random.max_x="11.71"
+		vel_random.min_y="-17.18"
+		vel_random.max_y="-2.8"
+		lifetime.min="0.7"
+		lifetime.max="1.2"
+		gravity.y="60"
+		render_on_grid="1"
+		airflow_force="0.5314"
+		airflow_scale="0.1371"
+		friction="0.0002"
+		probability="0.01"
+		count.min="0"
+		count.max="2">
+	</ParticleEffect>
+	<StatusEffects>
+		<Ingestion>
+			<StatusEffect type="OVERCAST_ANOMALY" amount="0.2" />
+		</Ingestion>
+		<Stains>
+			<StatusEffect type="OVERCAST_ANOMALY" />
+		</Stains>
+	</StatusEffects>
+	</CellData>
+	
+</Materials>

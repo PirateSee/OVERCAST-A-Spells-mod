@@ -1,0 +1,36 @@
+<Entity>
+	
+	<SpriteComponent 
+		_enabled="1" 
+		alpha="1" 
+		image_file="mods/cool_spell/files/particles/suction_area.png" 
+		next_rect_animation="" 
+		offset_x="16" 
+		offset_y="16" 
+		rect_animation="spawn"
+		z_index="1.2"
+		never_ragdollify_on_death="1"
+		>
+	</SpriteComponent>
+	
+	<DamageModelComponent 
+		hp="0.5"
+		materials_create_messages="1"
+		ragdoll_material="meat"
+		ragdoll_filenames_file="" 
+		blood_sprite_directional=""
+		blood_sprite_large=""
+		air_needed="0"
+		wait_for_kill_flag_on_death="1"
+		ui_report_damage="0"
+		>
+	</DamageModelComponent>
+	
+	<MaterialInventoryComponent
+		drop_as_item="0"
+		on_death_spill="1"
+		>
+	</MaterialInventoryComponent>
+
+</Entity>
+

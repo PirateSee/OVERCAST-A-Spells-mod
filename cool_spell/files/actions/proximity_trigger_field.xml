@@ -1,0 +1,67 @@
+<Entity tags="projectile_player,hittable" name="$projectile_default" >
+	<DamageModelComponent 
+        hp="0.5"
+        materials_create_messages="1"
+        ragdoll_material="metal_rust"
+		blood_sprite_directional=""
+		blood_sprite_large=""
+		blood_spray_material=""
+        ragdoll_filenames_file="" >
+	</DamageModelComponent>
+
+	<HitboxComponent 
+		aabb_min_x="-3" 
+		aabb_max_x="3" 
+		aabb_min_y="-3" 
+		aabb_max_y="3" 
+		is_enemy="1" 
+		is_item="0" 
+		is_player="0" >
+	</HitboxComponent>
+	
+	<Base file="data/entities/projectiles/deck/base_field.xml">
+		<SpriteComponent 
+			image_file="mods/cool_spell/files/projectiles_gfx/proximity_trigger_area_064.png"
+			z_index="1.2"
+			offset_x="32"
+			offset_y="32"
+			alpha="1"
+			>
+		</SpriteComponent>
+
+		<SpriteParticleEmitterComponent
+			_enabled="0"
+			>
+		</SpriteParticleEmitterComponent>
+
+		<ProjectileComponent 
+			damage_game_effect_entities=""
+			>
+			<config_explosion
+				explosion_sprite="data/particles/blast_out.xml"
+				>
+			</config_explosion>
+		</ProjectileComponent>
+		
+		<AudioLoopComponent
+		  file="data/audio/Desktop/projectiles.bank"
+		  event_name="player_projectiles/field_transmutation/loop"
+		  auto_play="1" >
+	  </AudioLoopComponent>
+	</Base>
+
+    <CollisionTriggerComponent
+    	width="64"
+    	height="64"
+    	radius="64"
+		required_tag="mortal"
+		destroy_this_entity_when_triggered="1"
+    	timer_for_destruction="20" >
+    </CollisionTriggerComponent>
+
+	<CameraBoundComponent
+	  max_count="20"
+	  distance="160000">
+	</CameraBoundComponent>
+</Entity>
+

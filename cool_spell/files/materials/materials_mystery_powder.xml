@@ -1,0 +1,28 @@
+<Materials>
+
+	<CellData
+	name="overcast_magic_liquid_mystery_powder"
+	ui_name="Anomalous Dust"
+  	tags="[sand_other],[corrodible],[alchemy]"
+	burnable="0"
+	density="2.73"
+	cell_type="liquid"
+	wang_color="FF46005B"
+	generates_smoke="0"
+	liquid_gravity="1"
+	liquid_sand="1"
+	gfx_glow="80"
+	hp="1000" 
+	audio_physics_material_event="sand"
+	audio_physics_material_wall="sand"
+	audio_physics_material_solid="sand"
+	show_in_creative_mode="1"
+	>
+	<StatusEffects>
+		<Ingestion>
+			<StatusEffect type="OVERCAST_ANOMALY" amount="0.4" />
+		</Ingestion>
+	</StatusEffects>
+	</CellData>
+	
+</Materials>

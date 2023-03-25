@@ -1,0 +1,27 @@
+<Entity>
+    <InheritTransformComponent>
+    </InheritTransformComponent>    
+    
+    <GameEffectComponent
+		_tags="selection_methane"
+        effect="CUSTOM"
+		custom_effect_id="INGESTION_METHANE"
+        frames="1200"
+    ></GameEffectComponent>
+
+    <LuaComponent
+    script_source_file="mods/Hydroxide/files/scripts/effects/methane/spawnController.lua"
+    execute_every_n_frame="1"
+	remove_after_executed="1"
+	></LuaComponent> --adds a controller if there is none
+
+	<UIIconComponent
+		name="Methane Poisoning"
+		description="Everything is hazy."
+		icon_sprite_file="mods/Hydroxide/files/gfx/ui/methane.png"
+		is_perk="0"
+		display_above_head="1"
+		display_in_hud="1">
+	</UIIconComponent>
+
+</Entity>

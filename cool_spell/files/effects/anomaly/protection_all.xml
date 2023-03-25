@@ -1,0 +1,23 @@
+<Entity tags="effect_protection" >
+	
+	<InheritTransformComponent>
+    </InheritTransformComponent>	
+    
+    <GameEffectComponent
+		_tags="selection_protection_all"
+        effect="PROTECTION_ALL"
+        frames="300"
+    >
+	</GameEffectComponent >
+	
+	<UIIconComponent
+		name="$status_protection_all"
+		description="$statusdesc_protection_all"
+		icon_sprite_file="data/ui_gfx/status_indicators/protection_all.png"
+		is_perk="0"
+		display_above_head="1"
+		display_in_hud="1"
+		>
+	</UIIconComponent>
+
+</Entity>
