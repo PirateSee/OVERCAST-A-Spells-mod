@@ -85,7 +85,7 @@ table.insert( actions,
 		add_projectile("mods/cool_spell/files/actions/flame_gas_release.xml")
 		c.fire_rate_wait = c.fire_rate_wait + 15
 	end,
-} )]]-- --already in vanilla
+} )]]-- --already in vanila
 --[[table.insert( actions,
 {
 	id          = "OVERCAST_SOAP_BULLET",
@@ -430,7 +430,7 @@ table.insert( actions,
 				end
 			end
 		else
-			print_error("[IF_INVENTORY] held wand is nill")
+			print_error("[IF_INVENTORY] held wand is nil")
 		end
 		
 		if ( #deck > 0 ) then
@@ -573,7 +573,7 @@ table.insert( actions,
 {
 	id          = "OVERCAST_THETA",
 	name 		= "Theta",
-	description = "Copies the wand's allways cast spells",
+	description = "Copies the wand's always cast spells",
 	sprite 		= "mods/cool_spell/files/actions/theta.png",
 	sprite_unidentified = "data/ui_gfx/gun_actions/spread_reduce_unidentified.png",
 	spawn_requires_flag = "card_unlocked_duplicate",
@@ -676,7 +676,7 @@ table.insert( actions,
 				end
 			end
 		else
-			print_error("[IF_MANA] held wand is nill")
+			print_error("[IF_MANA] held wand is nil")
 		end
 		
 		if ( #deck > 0 ) then
@@ -874,8 +874,8 @@ table.insert( actions,
 		local entity_id = GetUpdatedEntityID()
 		GlobalsSetValue("cool_spell_stored_id", tostring(entity_id))
 		if entity_id ~= nil then
-			if EntityGetName(entity_id) ~= nill then
-				GamePrint("Selected: " .. EntityGetName(entity_id) .. entity_id)
+			if GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) ~= nil then
+				GamePrint("Selected: " .. GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) .. entity_id)
 			else
 				GamePrint("Selected: " .. entity_id)
 			end
@@ -903,8 +903,8 @@ table.insert( actions,
 		local entity_id = tonumber(GlobalsGetValue("cool_spell_stored_id", "0"))
 		if EntityGetIsAlive(entity_id) then
 			EntityInflictDamage( entity_id, 0.15, "DAMAGE_PROJECTILE", "Selection Action - Injure", "NONE", 0, 0)
-			if EntityGetName(entity_id) ~= nill then
-				GamePrint("Affected: " .. EntityGetName(entity_id) .. entity_id)
+			if GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) ~= nil then
+				GamePrint("Affected: " .. GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) .. entity_id)
 			else
 				GamePrint("Affected: " .. entity_id)
 			end
@@ -1036,8 +1036,8 @@ table.insert( actions,
 			local jarated = EntityLoad("mods/cool_spell/files/effects/jarated.xml", x, y)
 			print(jarated)
 			EntityAddChild( entity_id, jarated )
-			if EntityGetName(entity_id) ~= nill then
-				GamePrint("Affected: " .. EntityGetName(entity_id) .. entity_id)
+			if GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) ~= nil then
+				GamePrint("Affected: " .. GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) .. entity_id)
 			else
 				GamePrint("Affected: " .. entity_id)
 			end
@@ -1087,8 +1087,8 @@ table.insert( actions,
 			GamePlaySound("data/audio/Desktop/materials.bank", "materials/liquid_splash", x, y)
 			local jarated = EntityLoad("mods/cool_spell/files/effects/wet.xml", x, y)
 			EntityAddChild( entity_id, jarated )
-			if EntityGetName(entity_id) ~= nill then
-				GamePrint("Affected: " .. EntityGetName(entity_id) .. entity_id)
+			if GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) ~= nil then
+				GamePrint("Affected: " .. GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) .. entity_id)
 			else
 				GamePrint("Affected: " .. entity_id)
 			end
@@ -1135,8 +1135,8 @@ table.insert( actions,
 			GamePlaySound("data/audio/Desktop/materials.bank", "materials/liquid_splash", x, y)
 			local jarated = EntityLoad("mods/cool_spell/files/effects/blood.xml", x, y)
 			EntityAddChild( entity_id, jarated )
-			if EntityGetName(entity_id) ~= nill then
-				GamePrint("Affected: " .. EntityGetName(entity_id) .. entity_id)
+			if GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) ~= nil then
+				GamePrint("Affected: " .. GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) .. entity_id)
 			else
 				GamePrint("Affected: " .. entity_id)
 			end
@@ -1183,8 +1183,8 @@ table.insert( actions,
 			GamePlaySound("data/audio/Desktop/materials.bank", "materials/liquid_splash", x, y)
 			local jarated = EntityLoad("mods/cool_spell/files/effects/slime.xml", x, y)
 			EntityAddChild( entity_id, jarated )
-			if EntityGetName(entity_id) ~= nill then
-				GamePrint("Affected: " .. EntityGetName(entity_id) .. entity_id)
+			if GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) ~= nil then
+				GamePrint("Affected: " .. GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) .. entity_id)
 			else
 				GamePrint("Affected: " .. entity_id)
 			end
@@ -1231,8 +1231,8 @@ table.insert( actions,
 			GamePlaySound("data/audio/Desktop/explosion.bank", "explosions/liquid", x, y)
 			local jarated = EntityLoad("mods/cool_spell/files/effects/alcoholic.xml", x, y)
 			EntityAddChild( entity_id, jarated )
-			if EntityGetName(entity_id) ~= nill then
-				GamePrint("Affected: " .. EntityGetName(entity_id) .. " " .. entity_id)
+			if GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) ~= nil then
+				GamePrint("Affected: " .. GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) .. " " .. entity_id)
 			else
 				GamePrint("Affected: " .. entity_id)
 			end
@@ -1279,8 +1279,8 @@ table.insert( actions,
 			GamePlaySound("data/audio/Desktop/explosion.bank", "explosions/liquid", x, y)
 			local jarated = EntityLoad("mods/cool_spell/files/effects/polymorph.xml", x, y)
 			EntityAddChild( entity_id, jarated )
-			if EntityGetName(entity_id) ~= nill then
-				GamePrint("Affected: " .. EntityGetName(entity_id) .. " " .. entity_id)
+			if GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) ~= nil then
+				GamePrint("Affected: " .. GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) .. " " .. entity_id)
 			else
 				GamePrint("Affected: " .. entity_id)
 			end
@@ -1313,8 +1313,8 @@ table.insert( actions,
 		local entity_id = tonumber(GlobalsGetValue("cool_spell_stored_id", "0"))
 		if EntityHasTag(entity_id, "projectile") then
 			EntityKill(entity_id)
-			if EntityGetName(entity_id) ~= nill then
-				GamePrint("Affected: " .. EntityGetName(entity_id) .. " " .. entity_id)
+			if GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) ~= nil then
+				GamePrint("Affected: " .. GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) .. " " .. entity_id)
 			else
 				GamePrint("Affected: " .. entity_id)
 			end
@@ -1443,7 +1443,7 @@ table.insert( actions,
 {
 	id          = "OVERCAST_SENTRY",
 	name 		= "Sentry",
-	description = "Deploys a floating crystal that casts the next 4 spells twords enemies. Prefers the selected entity",
+	description = "Deploys a floating crystal that casts the next 4 spells towards enemies. Prefers the selected entity",
 	sprite 		= "mods/cool_spell/files/actions/sentry_icon.png",
 	related_projectiles	= {"mods/cool_spell/files/actions/sentry_core.xml"},
 	type 		= ACTION_TYPE_PROJECTILE,
@@ -1515,8 +1515,8 @@ table.insert( actions,
 			GamePlaySound("data/audio/Desktop/explosion.bank", "explosions/liquid", x, y)
 			local jarated = EntityLoad("mods/cool_spell/files/effects/food_poison.xml", x, y)
 			EntityAddChild( entity_id, jarated )
-			if EntityGetName(entity_id) ~= nill then
-				GamePrint("Affected: " .. EntityGetName(entity_id) .. " " .. entity_id)
+			if GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) ~= nil then
+				GamePrint("Affected: " .. GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) .. " " .. entity_id)
 			else
 				GamePrint("Affected: " .. entity_id)
 			end
@@ -1563,8 +1563,8 @@ table.insert( actions,
 			GamePlaySound("data/audio/Desktop/explosion.bank", "explosions/liquid", x, y)
 			local jarated = EntityLoad("mods/cool_spell/files/effects/oiled.xml", x, y)
 			EntityAddChild( entity_id, jarated )
-			if EntityGetName(entity_id) ~= nill then
-				GamePrint("Affected: " .. EntityGetName(entity_id) .. " " .. entity_id)
+			if GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) ~= nil then
+				GamePrint("Affected: " .. GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) .. " " .. entity_id)
 			else
 				GamePrint("Affected: " .. entity_id)
 			end
@@ -1712,8 +1712,8 @@ table.insert( actions,
 			GamePlaySound("data/audio/Desktop/explosion.bank", "explosions/liquid", x, y)
 			local jarated = EntityLoad("mods/cool_spell/files/effects/anomaly_selection.xml", x, y)
 			EntityAddChild( entity_id, jarated )
-			if EntityGetName(entity_id) ~= nill then
-				GamePrint("Affected: " .. EntityGetName(entity_id) .. " " .. entity_id)
+			if GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) ~= nil then
+				GamePrint("Affected: " .. GameTextGetTranslatedOrNot(EntityGetName(selected_entity)) .. " " .. entity_id)
 			else
 				GamePrint("Affected: " .. entity_id)
 			end
@@ -1867,8 +1867,8 @@ table.insert( actions,
 	sprite_unidentified = "data/ui_gfx/gun_actions/berserk_field_unidentified.png",
 	related_projectiles	= {"mods/cool_spell/files/actions/broken_wand.xml"},
 	type 		= ACTION_TYPE_PROJECTILE,
-	spawn_level                       = "0,1,2,3,4", 
-	spawn_probability                 = "0.7,0.6,0.3,0.4,0.3", 
+	spawn_level                       = "0,1,2,3,4",
+	spawn_probability                 = "0.7,0.6,0.3,0.4,0.3",
 	price = 220,
 	mana = 230,
 	max_uses = 16,
@@ -1972,6 +1972,7 @@ table.insert( actions,
 		c.fire_rate_wait    = c.fire_rate_wait - 4
 	end,
 } )]]-- -- non-functional there is no radioactive damage type for projectiles :(
+	--Note[Conga]: Could add a child entity and run a lua script to add radioactive damage to the projectile, only issue would be the spell not showing how much radioactive damage it adds in the hud
 table.insert( actions,
 {
 	id          = "OVERCAST_SPIKED",
