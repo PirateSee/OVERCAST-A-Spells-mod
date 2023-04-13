@@ -1,3 +1,6 @@
+v2.0.1
+Fixed: One of the easter eggs no longer breaks everything
+
 v2.0.0!
 
 Added: Many spells. A few will be featured here:

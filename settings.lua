@@ -197,7 +197,7 @@ function ModSettingsGui( gui, in_main_menu )
 		
 		local lc, rc = false
 		
-		if greek ~= "none" or ModSettingGet( "cool_spell.gold_greek" ) then
+		if greek ~= "none" and ModSettingGet( "cool_spell.gold_greek" ) then
 			lc, rc = GuiImageButton(gui, new_id(), 0-offset, 0-y_offset, "", "mods/cool_spell/files/icons/gold_greek/" .. greek .. ".png") -- draw gui button
 		elseif v.id == "OVERCAST_HOLOBLADE_MASTER" and ModSettingGet("cool_spell.holoblade_pride") ~= false and ModSettingGet("cool_spell.holoblade_pride") ~= nil then
 			lc, rc = GuiImageButton(gui, new_id(), 0-offset, 0-y_offset, "", "mods/cool_spell/files/icons/holoblade_master_" .. ModSettingGet("cool_spell.holoblade_pride") .. ".png") -- draw gui button
