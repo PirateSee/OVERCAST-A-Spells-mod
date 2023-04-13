@@ -1,0 +1,37 @@
+<Entity>
+	
+	<LuaComponent
+		script_source_file="mods/cool_spell/files/scripts/rainbow_damage.lua"
+		execute_every_n_frame="-1"
+		execute_on_added="1"
+		remove_after_executed="1"
+		>
+	</LuaComponent>
+	
+	<ParticleEmitterComponent 
+		_tags="rainbow_damage"
+		emitted_material_name="water"
+		offset.x="0"
+		offset.y="0"
+		x_pos_offset_min="0"
+		x_pos_offset_max="0"
+		y_pos_offset_min="-3"
+		y_pos_offset_max="3"
+		x_vel_min="50"
+		x_vel_max="100"
+		gravity.y="0.0"
+		y_vel_min="-50"
+		y_vel_max="50"
+		count_min="1"
+		count_max="3"
+		lifetime_min="0.1"
+		lifetime_max="1"
+		create_real_particles="0"
+		emit_cosmetic_particles="1"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="3"
+		is_emitting="1" >
+	</ParticleEmitterComponent>
+
+</Entity>
+

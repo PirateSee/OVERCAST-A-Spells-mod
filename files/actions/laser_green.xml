@@ -2,7 +2,7 @@
 	
 	<Base file="data/entities/base_custom_card.xml" > 
 		<SpriteComponent 
-			image_file="mods/cool_spell/files/actions/laser_sight_green.png" >
+			image_file="mods/cool_spell/files/icons/laser_sight_green.png" >
 		</SpriteComponent>
 		
 		<ItemActionComponent 

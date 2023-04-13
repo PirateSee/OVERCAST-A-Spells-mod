@@ -1,0 +1,10 @@
+<Entity>
+	
+	<LuaComponent
+		script_source_file="mods/cool_spell/files/scripts/visual.lua"
+		execute_every_n_frame="1"
+		>
+	</LuaComponent>
+
+</Entity>
+

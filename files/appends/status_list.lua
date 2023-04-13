@@ -14,3 +14,11 @@ table.insert(status_effects, {
 	protects_from_fire=false,
 	effect_entity="mods/cool_spell/files/effects/overcasting.xml",
 });
+table.insert(status_effects, {
+	id="OVERCAST_RESOURCEFUL",
+	ui_name="Resourceful",
+	ui_description="You may not consume charges of spells",
+	ui_icon="mods/cool_spell/files/effects/overcasting.png",
+	protects_from_fire=false,
+	effect_entity="mods/cool_spell/files/effects/resourceful.xml",
+});

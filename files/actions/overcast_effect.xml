@@ -83,6 +83,20 @@
         entity_file="data/entities/particles/particle_explosion/explosion_trail_spark.xml" >
     </LoadEntitiesComponent>
 	
+    <LoadEntitiesComponent
+        count.min="2"
+        count.max="5"
+        kill_entity="1"
+        entity_file="data/entities/particles/particle_explosion/explosion_trail_swirl_orange_fast.xml" >
+    </LoadEntitiesComponent>
+	
+    <LoadEntitiesComponent
+        count.min="8"
+        count.max="16"
+        kill_entity="1"
+        entity_file="data/entities/particles/particle_explosion/explosion_trail_swirl_orange_slow.xml" >
+    </LoadEntitiesComponent>
+	
 	<ParticleEmitterComponent 
 		emitted_material_name="spark"
 		offset.x="0"

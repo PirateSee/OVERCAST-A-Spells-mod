@@ -2,7 +2,7 @@
 	
 	<Base file="data/entities/base_custom_card.xml" > 
 		<SpriteComponent 
-			image_file="mods/cool_spell/files/actions/leaky_pipe.png" >
+			image_file="mods/cool_spell/files/icons/leaky_pipe.png" >
 		</SpriteComponent>
 		
 		<ItemActionComponent 

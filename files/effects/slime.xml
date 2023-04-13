@@ -34,7 +34,7 @@
     
     <GameEffectComponent
 		_tags="selection_slime"
-        effect="slimy"
+        effect="SLIMY"
         frames="600">
 	</GameEffectComponent >
 	

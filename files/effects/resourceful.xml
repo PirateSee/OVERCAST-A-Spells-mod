@@ -1,0 +1,12 @@
+<Entity>	
+	<InheritTransformComponent>
+    </InheritTransformComponent>	
+    
+    <GameEffectComponent
+		_tags="selection_resourceful"
+    	effect="CUSTOM"
+        custom_effect_id="OVERCAST_RESOURCEFUL"
+    	frames="3600" >
+	</GameEffectComponent >
+    
+</Entity>

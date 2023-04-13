@@ -1,0 +1,17 @@
+<Materials>
+
+  <CellDataChild
+  	_parent="spark_electric"
+  	_inherit_reactions="1"
+  	name="overcast_mana_spark" 
+	ui_name="Mana Spark"
+	wang_color="0a0bffe5"
+	gfx_glow="130"
+	lifetime="5"
+	>
+  	<Graphics
+	color="800bffe5" >
+    </Graphics>
+  </CellDataChild>
+	
+</Materials>

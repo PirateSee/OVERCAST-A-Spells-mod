@@ -2,12 +2,12 @@
 	
 	<Base file="data/entities/base_custom_card.xml" > 
 		<SpriteComponent 
-			image_file="mods/cool_spell/files/actions/overdraw.png" >
+			image_file="mods/cool_spell/files/icons/overdraw.png" >
 		</SpriteComponent>
 		
 		<ItemActionComponent 
 			_tags="enabled_in_world"
-			action_id="LASER_SIGHT_GREEN" >
+			action_id="OVERCAST_OVERCAST" >
 		</ItemActionComponent>
 	</Base>
 	
@@ -33,6 +33,61 @@
 		draw_as_long="1"
 		is_emitting="1" >
 	</ParticleEmitterComponent>
+	
+  	<ParticleEmitterComponent
+		_tags="enabled_in_world,item_identified"
+		emitted_material_name="spark"
+		gravity.y="0.0"
+		lifetime_min="0.3"
+		lifetime_max="0.6"
+		count_min="1"
+		count_max="2"
+		render_on_grid="1"
+		area_circle_radius.min="24"
+		area_circle_radius.max="24"
+		cosmetic_force_create="0"
+		airflow_force="0.6"
+		airflow_time="0.2"
+		airflow_scale="0.1"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="1"
+		emit_cosmetic_particles="1"
+		attractor_force="32"
+		draw_as_long="1"
+		is_emitting="1" >
+	</ParticleEmitterComponent>
+	
+	<SpriteParticleEmitterComponent
+		_tags="enabled_in_world,item_identified"
+		sprite_file="data/particles/arc.xml"
+		delay="0"
+		lifetime="0"
+		color.r="1" color.g="0.75" color.b="0.1" color.a="1"
+		color_change.r="0" color_change.g="0" color_change.b="0" color_change.a="0"
+		velocity.x="0" velocity.y="0"
+		gravity.x="0" gravity.y="10"
+		velocity_slowdown="0"
+		rotation="0"
+		angular_velocity="0"
+		use_velocity_as_rotation="0"
+		scale.x="1" scale.y="1"
+		scale_velocity.x="0" scale_velocity.y="0"
+		emission_interval_min_frames="10"
+		emission_interval_max_frames="25"
+		count_min="1" 
+		count_max="1"
+		randomize_rotation.min="-3.1415"
+		randomize_rotation.max="3.1415"
+		randomize_position.min_x="-8"
+		randomize_position.max_x="8"
+		randomize_position.min_y="-16"
+		randomize_position.max_y="0"
+		randomize_velocity.min_x="-30"
+		randomize_velocity.max_x="30"
+		randomize_velocity.min_y="-30"
+		randomize_velocity.max_y="30"
+		>
+	</SpriteParticleEmitterComponent>
 	
 	<InheritTransformComponent
 		always_use_immediate_parent_rotation="1" 

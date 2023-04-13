@@ -1,0 +1,20 @@
+<Sprite
+filename="mods/cool_spell/files/particles/explosion_064_plasma_bolt_large.png"
+offset_x="32"
+offset_y="32" 
+default_animation="explosion"
+ >
+
+<!-- explosion -->
+<RectAnimation
+name="explosion"
+pos_x="0"
+pos_y="0"
+frame_count="5"
+frame_width="64"
+frame_height="64"
+frame_wait="0.03"
+frames_per_row="4"
+loop="0"   >
+</RectAnimation>
+</Sprite>

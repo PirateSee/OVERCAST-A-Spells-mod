@@ -1,0 +1,22 @@
+<Entity>
+  
+	<VariableStorageComponent
+		name="angle"
+		value_string="-1"
+		>
+	</VariableStorageComponent>
+	
+	<VariableStorageComponent
+		name="speed"
+		value_string="-1"
+		>
+	</VariableStorageComponent>
+	
+	<LuaComponent
+		script_source_file="data/scripts/projectiles/disc_bullet_big_trajectory.lua"
+		execute_every_n_frame="3"
+		>
+	</LuaComponent>
+
+</Entity>
+

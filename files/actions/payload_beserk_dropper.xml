@@ -1,0 +1,26 @@
+<Entity>
+	
+	<MaterialInventoryComponent 
+		drop_as_item="0" 
+		on_death_spill="1"
+		leak_on_damage_percent="0"
+		>
+		<count_per_material_type>
+			<Material material="magic_liquid_berserk" count="20"  />
+		</count_per_material_type>
+	</MaterialInventoryComponent>
+
+	<LifetimeComponent
+		lifetime="60">
+	</LifetimeComponent>
+
+	<DamageModelComponent 
+		blood_material="" 
+		hp="0.001" 
+		ui_report_damage="0"
+		ragdoll_filenames_file="" 
+		ragdoll_material="" >
+	</DamageModelComponent>
+
+</Entity>
+

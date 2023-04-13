@@ -47,6 +47,7 @@
       camera_shake="0" 
       explosion_radius="5" 
       explosion_sprite="mods/cool_spell/files/particles/sentry_fire.xml" 
+	  load_this_entity="mods/cool_spell/files/actions/sentry_fire_gfx.xml"
       explosion_sprite_lifetime="0" 
       create_cell_probability="0" 
       hole_destroy_liquid="1" 

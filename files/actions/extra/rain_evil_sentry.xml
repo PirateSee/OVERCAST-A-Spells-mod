@@ -1,0 +1,15 @@
+<Entity tags="">
+	<InheritTransformComponent />
+	
+	<LifetimeComponent
+		lifetime="400"
+		>
+	</LifetimeComponent>
+	
+	<LuaComponent 
+        _enabled="1" 
+        execute_every_n_frame="40"
+        script_source_file="mods/cool_spell/files/scripts/streaming_integration/rain_evil_sentry.lua" 
+	>
+    </LuaComponent>
+</Entity>

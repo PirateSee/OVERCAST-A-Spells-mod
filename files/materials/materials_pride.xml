@@ -1,0 +1,120 @@
+<Materials>
+
+  <CellDataChild
+  	_parent="material_rainbow"
+  	_inherit_reactions="1"
+  	name="overcast_pride_trans" 
+	ui_name="Trans"
+	wang_color="faEDA4B2"
+	>
+  	<Graphics
+	texture_file="mods/cool_spell/files/materials/pride_trans.png"
+	color="ffEDA4B2" >
+    </Graphics>
+  </CellDataChild>
+  
+  <CellDataChild
+  	_parent="material_rainbow"
+  	_inherit_reactions="1"
+  	name="overcast_pride_bi" 
+	ui_name="Bisexual"
+	wang_color="faD0156F"
+	>
+  	<Graphics
+	texture_file="mods/cool_spell/files/materials/pride_bi.png"
+	color="ffD0156F" >
+    </Graphics>
+  </CellDataChild>
+	
+  <CellDataChild
+  	_parent="material_rainbow"
+  	_inherit_reactions="1"
+  	name="overcast_pride_nonbinary" 
+	ui_name="Non-Binary"
+	wang_color="f9D0156F"
+	>
+  	<Graphics
+	texture_file="mods/cool_spell/files/materials/pride_nonbinary.png"
+	color="ffFEDE17" >
+    </Graphics>
+  </CellDataChild>
+
+  <CellDataChild
+  	_parent="material_rainbow"
+  	_inherit_reactions="1"
+  	name="overcast_pride_poly" 
+	ui_name="Polyamorus"
+	wang_color="f8D0156F"
+	>
+  	<Graphics
+	texture_file="mods/cool_spell/files/materials/pride_poly.png"
+	color="ffFEDE17" >
+    </Graphics>
+  </CellDataChild>
+  
+  <CellDataChild
+  	_parent="material_rainbow"
+  	_inherit_reactions="1"
+  	name="overcast_pride_aroace" 
+	ui_name="Aroace"
+	wang_color="f7D0156F"
+	>
+  	<Graphics
+	texture_file="mods/cool_spell/files/materials/pride_aroace.png"
+	color="ffFEDE17" >
+    </Graphics>
+  </CellDataChild>
+  
+  <CellDataChild
+  	_parent="material_rainbow"
+  	_inherit_reactions="1"
+  	name="overcast_pride_asexual" 
+	ui_name="Asexual"
+	wang_color="f6D0156F"
+	>
+  	<Graphics
+	texture_file="mods/cool_spell/files/materials/pride_asexual.png"
+	color="ffFEDE17" >
+    </Graphics>
+  </CellDataChild>
+  
+  <CellDataChild
+  	_parent="material_rainbow"
+  	_inherit_reactions="1"
+  	name="overcast_pride_intersex" 
+	ui_name="Intersex"
+	wang_color="f5D0156F"
+	>
+  	<Graphics
+	texture_file="mods/cool_spell/files/materials/pride_intersex.png"
+	color="ffFEDE17" >
+    </Graphics>
+  </CellDataChild>
+  
+  <CellDataChild
+  	_parent="material_rainbow"
+  	_inherit_reactions="1"
+  	name="overcast_pride_lesbian" 
+	ui_name="Non-Binary"
+	wang_color="f4D0156F"
+	>
+  	<Graphics
+	texture_file="mods/cool_spell/files/materials/pride_lesbian.png"
+	color="ffFEDE17" >
+    </Graphics>
+  </CellDataChild>
+  
+  <CellDataChild
+  	_parent="material_rainbow"
+  	_inherit_reactions="1"
+  	name="overcast_pride_pan" 
+	ui_name="Pansexual"
+	wang_color="f3D0156F"
+	>
+  	<Graphics
+	texture_file="mods/cool_spell/files/materials/pride_pan.png"
+	color="ffFEDE17" >
+    </Graphics>
+  </CellDataChild>
+	
+</Materials>

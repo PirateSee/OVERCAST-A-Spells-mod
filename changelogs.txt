@@ -1,0 +1,24 @@
+v2.0.0!
+
+Added: Many spells. A few will be featured here:
+Added Spell: Payload Spells: Drop a bit of their respective material when the projectile expires.
+Added Spell: Railgun: Increases projectile damage and speed, but adds a delay between casting and firing the projectile.
+
+Added: New spell to starting bomb wand: Plasma Bolt
+Added: New spell to starting blue wand: Poison Dart
+Added: 2 secret wands to find, both of which unlock spells!
+Added: A few streaming intergration events, namely Puddle Of Chaos being an event now (recommended to disable sea of random, since this is a better version)
+Added: some "secret" spells unlocked by picking up the rainbow trail
+Added: Settings menu now allows you to disable spells
+Added: Easter eggs..?
+
+Changed: OVERCAST effect looks better (again)
+Changed: OVERCAST spell card when on the ground has a particle effect
+Changed: Bore spell digs a wider tunnel
+Changed: Sentries look better
+Changed: OVERCAST spell and Ammo Conservation spell are more common
+Changed: Passive Digging Laser has been reworked into Passive Drill
+
+Changed: Many files in the mod have been moved around for better organisation
+
+v2.0.0!\n\nAdded: Many spells. A few will be featured here:\nAdded Spell: Payload Spells: Drop a bit of their respective material when the projectile expires.\nAdded Spell: Railgun: Increases projectile damage and speed, but adds a delay between casting and firing the projectile.\nAdded: New spell to starting bomb wand: Plasma Bolt\n\nAdded: New spell to starting blue wand: Poison Dart\nAdded: 2 secret wands to find, both of which unlock spells!\nAdded: A few streaming intergration events, namely Puddle Of Chaos being an event now (recommended to disable sea of random, since this is a better version)\nAdded: some "secret" spells unlocked by picking up the rainbow trail\nAdded: Settings menu now allows you to disable spells\nAdded: Easter eggs..?\n\nChanged: OVERCAST effect looks better (again)\nChanged: OVERCAST spell card when on the ground has a particle effect\nChanged: Bore spell digs a wider tunnel\nChanged: Sentries look better\nChanged: OVERCAST spell and Ammo Conservation spell are more common\nChanged: Passive Digging Laser has been reworked into Passive Drill\n\nChanged: Many files in the mod have been moved around for better organisation

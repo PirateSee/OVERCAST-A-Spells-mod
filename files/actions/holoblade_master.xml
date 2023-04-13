@@ -1,0 +1,93 @@
+<Entity>
+	
+	<Base file="data/entities/base_custom_card.xml" > 
+		<SpriteComponent 
+			image_file="mods/cool_spell/files/icons/holoblade_master.png" >
+		</SpriteComponent>
+		
+		<ItemActionComponent 
+			_tags="enabled_in_world"
+			action_id="OVERCAST_HOLOBLADE_MASTER" >
+		</ItemActionComponent>
+	</Base>
+	
+  	<ParticleEmitterComponent 
+		_tags="enabled_in_hand"
+		emitted_material_name="plasma_fading_green"
+		gravity.y="0.0"
+		lifetime_min="0.01666"
+		lifetime_max="0.01666"
+		count_min="8"
+		count_max="16"
+		render_on_grid="0"
+		fade_based_on_lifetime="0"
+		area_circle_radius.min="0"
+		area_circle_radius.max="0"
+		cosmetic_force_create="0"
+		airflow_force="0.05"
+		airflow_time="0.05"
+		airflow_scale="0.05"
+		x_pos_offset_max="25"
+		x_pos_offset_min="25"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="1"
+		emit_cosmetic_particles="1"
+		image_animation_file="mods/cool_spell/files/particles/holoblade_emitter_massive.png"
+		image_animation_speed="0"
+		image_animation_loop="1"
+		image_animation_raytrace_from_center="0"
+		image_animation_use_entity_rotation="1"
+		is_emitting="1" >
+	</ParticleEmitterComponent>
+	
+	<AreaDamageComponent
+		_tags="enabled_in_hand"
+		aabb_min.y="-19" 
+		aabb_min.x="-15" 
+		aabb_max.y="19" 
+		aabb_max.x="65" 
+		damage_per_frame="0.05"	
+		update_every_n_frame="3"
+		entities_with_tag="enemy"
+		death_cause="Holoblade"
+		damage_type="DAMAGE_MELEE"
+		>
+	</AreaDamageComponent>
+	
+	<LuaComponent
+		_tags="enabled_in_hand"
+		script_source_file="mods/cool_spell/files/scripts/holoblade_master.lua"
+		execute_every_n_frame="3"
+		>
+	</LuaComponent>
+
+	<VariableStorageComponent
+		name="rot"
+		value_float="0"
+		>
+	</VariableStorageComponent>
+	
+	<EnergyShieldComponent
+		_tags="enabled_in_hand"
+		sector_degrees="180"
+		radius="16"
+		>
+	</EnergyShieldComponent>
+	
+    <AudioComponent
+        _tags="enabled_in_hand,item_identified"
+        file="data/audio/Desktop/projectiles.bank"
+        event_root="player_projectiles/shield"
+        set_latest_event_position="1" >
+    </AudioComponent>
+	
+	<InheritTransformComponent
+		always_use_immediate_parent_rotation="1" 
+		_tags="enabled_in_world,enabled_in_hand" >
+	  <Transform 
+		position.x="0" 
+		position.y="0" >
+	  </Transform>
+	</InheritTransformComponent>
+	
+</Entity>

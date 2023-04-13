@@ -1,0 +1,95 @@
+<Entity>
+	
+	<Base file="data/entities/base_custom_card.xml" > 
+		<SpriteComponent 
+			image_file="mods/cool_spell/files/icons/gravity.png" >
+		</SpriteComponent>
+		
+		<ItemActionComponent 
+			_tags="enabled_in_world"
+			action_id="OVERCAST_GRAVITY" >
+		</ItemActionComponent>
+	</Base>
+	
+	<LuaComponent
+		_tags="enabled_in_world,enabled_in_hand"
+		script_source_file="mods/cool_spell/files/scripts/moon.lua"
+		execute_every_n_frame="1"
+		>
+	</LuaComponent>
+
+	<ParticleEmitterComponent 
+		_tags="enabled_in_world,enabled_in_hand"
+		emitted_material_name="spark_white"
+		gravity.y="0.0"
+		lifetime_min="0.5"
+		lifetime_max="1.0"
+		count_min="1"
+		count_max="2"
+		render_on_grid="1"
+		fade_based_on_lifetime="1"
+		area_circle_radius.max="96"
+		cosmetic_force_create="0"
+		airflow_force="0.5"
+		airflow_time="0.01"
+		airflow_scale="0.05"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="1"
+		emit_cosmetic_particles="1"
+		is_emitting="1" 
+		draw_as_long="1"
+		attractor_force="12"
+		>
+	</ParticleEmitterComponent>
+
+	<!-- outer ring -->
+  	<ParticleEmitterComponent 
+  		_tags="enabled_in_world,enabled_in_hand"
+		emitted_material_name="spark_white"
+		gravity.y="0.0"
+		lifetime_min="0.2"
+		lifetime_max="0.8"
+		count_min="5"
+		count_max="10"
+		render_on_grid="1"
+		fade_based_on_lifetime="1"
+		area_circle_radius.min="96"
+		area_circle_radius.max="96"
+		cosmetic_force_create="0"
+		airflow_force="0.3"
+		airflow_time="0.01"
+		airflow_scale="0.05"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="1"
+		emit_cosmetic_particles="1"
+		is_emitting="1" >
+	</ParticleEmitterComponent>
+
+	<AudioLoopComponent
+		_tags="enabled_in_world"
+		file="data/audio/Desktop/misc.bank"
+		event_name="misc/moon/movement_loop_world"
+		set_speed_parameter="1"
+		auto_play="1"
+		play_on_component_enable="1">
+	</AudioLoopComponent>
+
+	<AudioLoopComponent
+		_tags="enabled_in_hand"
+		file="data/audio/Desktop/misc.bank"
+		event_name="misc/moon/movement_loop_hand"
+		set_speed_parameter="1"
+		auto_play="1"
+		play_on_component_enable="1">
+	</AudioLoopComponent>
+	
+	<InheritTransformComponent
+		always_use_immediate_parent_rotation="1" 
+		_tags="enabled_in_world,enabled_in_hand" >
+	  <Transform 
+		position.x="0" 
+		position.y="0" >
+	  </Transform>
+	</InheritTransformComponent>
+	
+</Entity>

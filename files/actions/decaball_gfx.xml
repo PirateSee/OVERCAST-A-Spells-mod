@@ -1,0 +1,15 @@
+<Entity name="$projectile_default" tags="projectile_player" >
+
+	<Base file="mods/cool_spell/files/actions/decaball.xml" >
+	</Base>
+	
+    <LuaComponent
+		script_source_file="mods/cool_spell/files/scripts/decaball_gfx.lua"
+		execute_every_n_frame="-1"
+		execute_on_added="1"
+		remove_after_executed="1"
+		>
+	</LuaComponent>
+
+</Entity>
+

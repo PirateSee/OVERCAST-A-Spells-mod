@@ -1,0 +1,6 @@
+<Entity >
+	<ArcComponent
+		lifetime="15" 
+		material="spark_blue" >
+	</ArcComponent>
+</Entity>

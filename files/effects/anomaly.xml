@@ -11,7 +11,7 @@
 
     <LuaComponent
 		script_source_file="mods/cool_spell/files/effects/anomaly.lua"
-		execute_every_n_frame="1" >
+		execute_every_n_frame="120" >
 	</LuaComponent>
     
 </Entity>
