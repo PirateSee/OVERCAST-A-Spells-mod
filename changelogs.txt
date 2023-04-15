@@ -1,3 +1,7 @@
+v2.0.3
+Fixed: Spelling errors
+Fixed: The newline thing done in settings should no longer break up words
+
 v2.0.2
 Fixed: settings menu on steam version should act less weird
 Fixed: Broken Wand Lobber now adds cast delay instead of subtracting

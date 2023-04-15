@@ -54,15 +54,15 @@ mod_settings =
 			},
 			{
 				id = "do_world",
-				ui_name = "Spawn {ixelscenes",
-				ui_description = "Weather or not to spawn pixelscenes containing the secret wands.\nYou may want to disable this for compatability with mods that signifigantly change world generation.",
+				ui_name = "Spawn Pixelscenes",
+				ui_description = "Whether or not to spawn pixelscenes containing the secret wands.\nYou may want to disable this for compatability with mods that significantly change world generation.",
 				value_default = true,
 				scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
 			},
 			{
 				id = "do_always_cast",
 				ui_name = "Edit Always Cast Perk",
-				ui_description = "Adds additional OVERCAST spells as \"good\" always cast spells from the Always Cast perk.",
+				ui_description = "Adds additional OVERCAST spells as \"good\"; always cast spells from the Always Cast perk.",
 				value_default = true,
 				scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
 			},
@@ -76,14 +76,14 @@ mod_settings =
 			{
 				id = "inert",
 				ui_name = "Inert Materials",
-				ui_description = "Makes materials added by this mod have no reactions.\nEnable if you dont want this mod to add materials.",
+				ui_description = "Makes materials added by this mod have no reactions.\nEnable if you don't want this mod to add materials.",
 				value_default = false,
 				scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
 			},
 			{
 				id = "potions",
 				ui_name = "Spawn In Potions",
-				ui_description = "Makes materials added by spawn in potions.\nDisable if you dont want this mod to add materials.",
+				ui_description = "Makes materials added by spawn in potions.\nDisable if you don't want this mod to add materials.",
 				value_default = true,
 				scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
 			}
@@ -111,7 +111,7 @@ mod_settings =
 			{
 				id = "more_info",
 				ui_name = "Display more info",
-				ui_description = "Shows spawning information in the disable tooltip. Might make things cluttered\nNote: The cost amount gets multipled depending on depth, it isn't a very accurate description\nof how much you will have to pay. Only useful if comparing",
+				ui_description = "Shows spawning information in the disable tooltip. Might make things cluttered\nNote: The cost amount gets multipled depending on depth. It isn't a very accurate description\nof how much you will have to pay. Only useful if comparing info.",
 				value_default = false,
 				scope = MOD_SETTING_SCOPE_RUNTIME,
 				change_fn = mod_setting_instant,
@@ -249,7 +249,15 @@ function ModSettingsGui( gui, in_main_menu )
 		
 		local length = string.len(v.description)
 		if length > 68 then
-			description = string.insert(v.description, "-\n", 68)
+			local index = 64
+			local ch = "a"
+			while ch ~= " " do
+				ch = string.sub(v.description, index, index)
+				index = index + 1
+				--print(ch)
+				if index == 76 then break end
+			end
+			description = string.insert(v.description, "\n", index-1)
 		else
 			description = v.description
 		end
