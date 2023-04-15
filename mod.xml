@@ -1,6 +1,6 @@
 <Mod
 	name="Overcast 2.0!  - A Spells Mod"
-	description="v2.0.1\nAdds 105 spells into the game. Contains spells for all kinds of uses.\nShoot poison darts or turn projectiles into black holes that suck in other projectiles.\nAlso included, are a set of powerful Selection spells which\nallow you to select entities and perform actions on them from any distance.\nNOTE: MAY BE INCOMPATABLE WITH SOME MODS EDITING gun.lua.\nThe OVERCAST spell which does this can be disabled in config if needed.\nLOAD AFTER Esoteric Arcana!!!"
+	description="v2.0.2\nAdds 105 spells into the game. Contains spells for all kinds of uses.\nShoot poison darts or turn projectiles into black holes that suck in other projectiles.\nAlso included, are a set of powerful Selection spells which\nallow you to select entities and perform actions on them from any distance.\nNOTE: MAY BE INCOMPATABLE WITH SOME MODS EDITING gun.lua.\nThe OVERCAST spell which does this can be disabled in config if needed.\nLOAD AFTER Esoteric Arcana!!!"
 	request_no_api_restrictions="0" 
 > 
 </Mod>

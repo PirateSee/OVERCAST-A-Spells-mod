@@ -46,7 +46,7 @@ mod_settings =
 			},
 			{
 				id = "do_overcast",
-				ui_name = "Enable gun.lua appends",
+				ui_name = "Enable gun.lua Appends",
 				ui_description = "Disable gun.lua appends\n(and therefore the OVERCAST, Ammo Conservation, and Railgun spell)\nif its casuing compatability problems.",
 				value_default = true,
 				scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
@@ -54,8 +54,8 @@ mod_settings =
 			},
 			{
 				id = "do_world",
-				ui_name = "Spawn pixelscenes",
-				ui_description = "Weather or not to spawn pixelscenes containing the secret wands.\nYou may wand to do this for compatability with mods that signifigantly change biome generation.",
+				ui_name = "Spawn {ixelscenes",
+				ui_description = "Weather or not to spawn pixelscenes containing the secret wands.\nYou may want to disable this for compatability with mods that signifigantly change world generation.",
 				value_default = true,
 				scope = MOD_SETTING_SCOPE_RUNTIME_RESTART,
 			},
@@ -142,6 +142,11 @@ function ModSettingsGui( gui, in_main_menu )
 	local y_offset_next = 0
 	local already_ended = true
 	
+	if overcast_actions == nil then
+		GuiText( gui, 0, 0, "Couldn't fetch spells list :(\n \nThis usualy happens if you're on the main menu with the steam version of the mod\ntry starting a game or downloading the mod from modworkshop" )
+		return
+	end
+	
 	GuiLayoutBeginHorizontal( gui, 0, 0, false, 8, 2) -- begin buttons
 	
 		if GuiButton( gui, new_id(), 0, 0, "[Enable All]" ) then
@@ -178,7 +183,7 @@ function ModSettingsGui( gui, in_main_menu )
 		end
 		
 		if v.id == "OVERCAST_OVERCAST" or v.id == "OVERCAST_CONSERVE" or v.id == "OVERCAST_RAILGUN" then
-			extra_notes = "\n!!Requires an append to gun.lua. Will be automaticly disabled when gun.lua appends are disabled.!!" -- extra info about these spells
+			extra_notes = "\n!!Requires an append to gun.lua. Will be automaticly disabled when gun.lua appends are disabled!!" -- extra info about these spells
 			if not ModSettingGetNextValue("cool_spell.do_overcast") then
 				skip_tooltips = true
 				disabled = true

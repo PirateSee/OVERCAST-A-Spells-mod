@@ -40,11 +40,11 @@ gun.deck_capacity = {3,5}
 gun.actions_per_round = 1
 gun.reload_time = {25,45}
 gun.shuffle_deck_when_empty = 0
-gun.fire_rate_wait = 12
-gun.spread_degrees = 0
+gun.fire_rate_wait = 24
+gun.spread_degrees = -5
 gun.speed_multiplier = 1
-gun.mana_charge_speed = {500,600}
-gun.mana_max = {120,240}
+gun.mana_charge_speed = {450,550}
+gun.mana_max = {160,240}
 
 local mana_max = get_random_between_range( gun.mana_max )
 local deck_capacity = gun.deck_capacity

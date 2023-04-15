@@ -1895,7 +1895,7 @@ table.insert( overcast_actions,
 {
 	id          = "OVERCAST_BOTTLER",
 	name 		= "Bottler",
-	description = "Sucks up nearb liquids for a time, then drops a potion with what it grabbed",
+	description = "Sucks up nearby liquids for a time, then drops a potion with what it grabbed",
 	sprite 		= "mods/cool_spell/files/icons/bottler.png",
 	sprite_unidentified = "data/ui_gfx/gun_actions/berserk_field_unidentified.png",
 	related_projectiles	= {"mods/cool_spell/files/actions/bottler.xml"},
@@ -1924,10 +1924,10 @@ table.insert( overcast_actions,
 	spawn_level                       = "0,1,2,3,4",
 	spawn_probability                 = "0.7,0.6,0.3,0.4,0.3",
 	price = 220,
-	mana = 230,
+	mana = 180,
 	max_uses = 16,
 	action 		= function()
-		c.fire_rate_wait    = c.fire_rate_wait - 60
+		c.fire_rate_wait    = c.fire_rate_wait + 45
 		current_reload_time = current_reload_time + 30
 		add_projectile("mods/cool_spell/files/actions/broken_wand.xml")
 	end,
@@ -1948,6 +1948,7 @@ table.insert( overcast_actions,
 		add_projectile("mods/cool_spell/files/actions/pinpoint_laser.xml")
 		c.fire_rate_wait = c.fire_rate_wait + 15
 		c.spread_degrees = c.spread_degrees - 5
+		c.damage_critical_chance = c.damage_critical_chance + 5
 	end,
 } )
 table.insert( overcast_actions,
@@ -2578,7 +2579,8 @@ table.insert( overcast_actions,
 	spawn_probability                 = "0.8,0.8,0.8,0.8", -- BLACK_HOLE
 	price = 230,
 	mana = 80,
-	max_uses = 80,
+	max_uses = 8,
+	never_unlimited = true,
 	action 		= function()
 		add_projectile("mods/cool_spell/files/actions/mini_black_hole.xml")
 		c.fire_rate_wait = c.fire_rate_wait + 50
@@ -2598,7 +2600,8 @@ table.insert( overcast_actions,
 	spawn_probability                 = "0.5,0.5,0.5,0.5", -- BLACK_HOLE
 	price = 230,
 	mana = 85,
-	max_uses = 80,
+	max_uses = 8,
+	never_unlimited = true,
 	action 		= function()
 		add_projectile_trigger_death("mods/cool_spell/files/actions/mini_black_hole.xml", 1)
 		c.fire_rate_wait = c.fire_rate_wait + 50
@@ -2952,15 +2955,13 @@ table.insert( overcast_actions,
 	spawn_level                       = "3,4,5,6,10",
 	spawn_probability                 = "0.3,0.5,1,0.8,1",
 	price = 140,
-	mana = -20,
-	max_uses = 10,
-	never_unlimited = true,
+	mana = 5,
+	max_uses = 25,
 	action 		= function()
 		c.spread_degrees = c.spread_degrees - 20
 		c.speed_multiplier = c.speed_multiplier * 1.4
-		c.damage_projectile_add = c.damage_projectile_add + 0.7
-		c.damage_slice_add = c.damage_slice_add + 0.4
-		c.damage_curse_add = c.damage_curse_add + 0.1
+		c.damage_projectile_add = c.damage_projectile_add + 0.5
+		c.damage_slice_add = c.damage_slice_add + 0.3
 		shot_effects.recoil_knockback = shot_effects.recoil_knockback + 15.0
 		c.gore_particles    = c.gore_particles + 5
 		c.friendly_fire = false

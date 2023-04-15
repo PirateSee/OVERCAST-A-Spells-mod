@@ -1,3 +1,13 @@
+v2.0.2
+Fixed: settings menu on steam version should act less weird
+Fixed: Broken Wand Lobber now adds cast delay instead of subtracting
+Fixed: Many instances of things being GamePrint-ed
+Fixed: Some spelling mistakes, there are probably more
+
+Changed: Mini Black Hole reblanced: Less charges, Less lifetime, Shouldn't hurt you as often
+Changed: Augment reblanced: Costs mana, More charges, Can be infinite, Less damage
+Changed: Pinpoint bolt now has critical damage chance
+
 v2.0.1
 Fixed: One of the easter eggs no longer breaks everything
 
