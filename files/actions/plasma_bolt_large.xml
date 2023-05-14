@@ -49,7 +49,7 @@
       explosion_sprite_additive="1"
       hole_enabled="1" 
       ray_energy="20000"
-      damage="3.5"
+      damage="2.3"
       particle_effect="1" 
       damage_mortals="1"
       physics_explosion_power.min="1.4" 

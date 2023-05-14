@@ -1,3 +1,18 @@
+v2.0.6
+Changed: Spell loading optimisations
+
+v2.0.5
+Changed: Passive drill gooder (does anyone use this anyway??)
+Changed: Bore digs a wider tunnel, has twice the charges, uses twice as much mana, and has a bit of recoil
+Changed: Plasma bolts do less explosive damage
+Changed: Augment damage buffed slightly
+
+Fixed: Beam and plank spells no longer print your rotation
+
+v2.0.4
+Fixed: Removed dofile from gun_actions.lua appends, should help with mods reading gun_actions.lua
+Added Spell: Purple thgiS resaL? (backwards laser sight)
+
 v2.0.3
 Fixed: Spelling errors
 Fixed: The newline thing done in settings should no longer break up words
@@ -39,3 +54,7 @@ Changed: Passive Digging Laser has been reworked into Passive Drill
 Changed: Many files in the mod have been moved around for better organisation
 
 v2.0.0!\n\nAdded: Many spells. A few will be featured here:\nAdded Spell: Payload Spells: Drop a bit of their respective material when the projectile expires.\nAdded Spell: Railgun: Increases projectile damage and speed, but adds a delay between casting and firing the projectile.\nAdded: New spell to starting bomb wand: Plasma Bolt\n\nAdded: New spell to starting blue wand: Poison Dart\nAdded: 2 secret wands to find, both of which unlock spells!\nAdded: A few streaming intergration events, namely Puddle Of Chaos being an event now (recommended to disable sea of random, since this is a better version)\nAdded: some "secret" spells unlocked by picking up the rainbow trail\nAdded: Settings menu now allows you to disable spells\nAdded: Easter eggs..?\n\nChanged: OVERCAST effect looks better (again)\nChanged: OVERCAST spell card when on the ground has a particle effect\nChanged: Bore spell digs a wider tunnel\nChanged: Sentries look better\nChanged: OVERCAST spell and Ammo Conservation spell are more common\nChanged: Passive Digging Laser has been reworked into Passive Drill\n\nChanged: Many files in the mod have been moved around for better organisation
+
+v2.0.3\nFixed: Spelling errors\nFixed: The newline thing done in settings should no longer break up words
+
+v2.0.5\nChanged: Passive drill gooder (does anyone use this anyway??)\nChanged: Bore digs a wider tunnel, has twice the charges, uses twice as much mana, and has a bit of recoil\nChanged: Plasma bolts do less explosive damage\nChanged: Augment damage buffed slightly

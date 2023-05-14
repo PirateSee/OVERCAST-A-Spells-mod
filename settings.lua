@@ -132,6 +132,8 @@ function ModSettingsGui( gui, in_main_menu )
 	
 	local id = 34756
 	
+	print("overcast")
+	
 	function new_id()
 		id = id+1
 		return id

@@ -1,5 +1,5 @@
 dofile("mods/cool_spell/files/actions_list.lua")
-dofile_once("mods/cool_spell/settings.lua")
+--dofile_once("mods/cool_spell/settings.lua")
 
 local spells_count = 0
 local disabled_count = 0

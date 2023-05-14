@@ -2,8 +2,8 @@
 
 	<Base file="data/entities/base_projectile.xml" >
     <VelocityComponent
-      gravity_y="35"
-      air_friction="0.3s"
+      gravity_y="30"
+      air_friction="0.3"
 	  mass="0.26"
 	  >
     </VelocityComponent>
@@ -71,7 +71,7 @@
   
     <CellEaterComponent
 		eat_probability="50"
-        radius="5.5"
+        radius="6"
 		ignored_material="rock_static_cursed"
 		ignored_material_tag="[matter_eater_ignore_list]"
 		>

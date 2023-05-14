@@ -7,8 +7,6 @@ if rot > 0 then
 end
 	
 local rot = math.abs(rot) *180/math.pi
-	
-GamePrint(tostring(rot))
 
 if rot < 22.5 or rot > 157.5 then
 	LoadPixelScene( "mods/cool_spell/files/world/beam_ver.png", "", x-8, y-32, "", true )
